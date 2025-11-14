@@ -1,46 +1,38 @@
-# Astro Starter Kit: Basics
+# Agri‑Tech Landing Page (Astro)
 
-```sh
-npm create astro@latest -- --template basics
+An Astro-based landing page advertising Agri‑Tech — a Cambodian startup providing an AI-powered chatbot for instant, reliable farming advice in Khmer.
+
+## What’s inside
+
+- `src/components/Hero.astro`: Khmer hero with CTA
+- `src/components/Features.astro`: Four key value props
+- `src/components/CTA.astro`: Try-the-chat call-to-action
+- `src/layouts/Layout.astro`: Base SEO, fonts, header/footer
+- `public/logo.svg`: Simple leaf logo used in header
+
+## Run locally
+
+```bash
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+The dev server will print a local URL (defaults to `http://localhost:4321`).
 
-## 🚀 Project Structure
+## Build & preview
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+```bash
+npm run build
+npm run preview
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Customize
 
-## 🧞 Commands
+- Update copy (Khmer/English) in `Hero.astro`, `Features.astro`, and `CTA.astro`.
+- Replace `public/logo.svg` with your branding. This file is used both in the header and as the favicon (browser tab icon). If you prefer a dedicated favicon, add `public/favicon.png` (32x32/64x64) and update the `<link rel="icon">` in `src/layouts/Layout.astro`.
+- Wire the CTA link in `CTA.astro` to your real chat URL/app.
 
-All commands are run from the root of the project, from a terminal:
+## Tech
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Astro 5 — no runtime JS for the static sections
+- Google Fonts: Inter and Noto Sans Khmer
